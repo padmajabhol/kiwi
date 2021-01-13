@@ -1,0 +1,75 @@
+#faq {
+    height: 100vh;
+  }
+  .faq-container {
+    background-color: aqua;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+  .accordion {
+    background: rgb(231, 210, 255);
+    border-radius: 6px;
+    margin: 20px 0;
+  }
+  .accordion h3 {
+    padding: 15px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  .accordion-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .accordion-question .fas.fa-plus {
+    font-size: 1.3em;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .accContent {
+    border-radius: 5px;
+    margin-top: 0px;
+    display: none;
+  }
+  .active {
+    display: block;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .contnet-inner {
+    padding: 15px;
+  }
+  .rotate {
+    transform: rotate(45deg);
+    transition: transform 0.2s linear;
+  }
+  
+  /*----Partners----*/
+  #partner{
+    margin: 5%;
+  }
+  .our-partner {
+  text-align: center;
+  }
+  .our-partner .pic{
+    border: solid 2px black;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+  }
+  .our-partner:hover .pic{  
+    border-bottom-color: #1c142b;
+    border-radius: 0 50%;
+  }
+  @media only screen and (max-width: 768px){
+    .our-sponsor .pic{
+        height: 300px;
+        width: 300px;
+        margin: 0 5% 0 15%;
+    }
+  }
